@@ -276,28 +276,6 @@ function scrollToSection(sectionId) {
   }
 }
 
-/**
- * Service card hover effects
- */
-document.addEventListener('mouseover', (e) => {
-  const card = e.target.closest('.service-card');
-  if (card) {
-    const icon = card.querySelector('.service-card-icon');
-    if (icon) {
-      icon.style.transform = 'scale(1.1) rotate(5deg)';
-    }
-  }
-});
-
-document.addEventListener('mouseout', (e) => {
-  const card = e.target.closest('.service-card');
-  if (card) {
-    const icon = card.querySelector('.service-card-icon');
-    if (icon) {
-      icon.style.transform = '';
-    }
-  }
-});
 
 // Add CSS for spin animation
 const style = document.createElement('style');
