@@ -18,6 +18,16 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%2387CEFA' rx='20' width='100' height='100'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EL%3C/text%3E%3C/svg%3E">
 </head>
 <body>
+  <!-- SVG Gradient Definition for Icons -->
+  <svg width="0" height="0" style="position:absolute">
+    <defs>
+      <linearGradient id="icon-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#FACC87" />
+        <stop offset="100%" style="stop-color:#FFFFFF" />
+      </linearGradient>
+    </defs>
+  </svg>
+
   <!-- ========================================
        NAVIGATION
        ======================================== -->
@@ -191,59 +201,76 @@
   </section>
 
   <!-- ========================================
-       HOW IT WORKS SECTION
+       TRUST SECTION
        ======================================== -->
-  <section id="how-it-works" class="section how-it-works">
+  <section id="trust" class="section trust-section">
     <div class="container">
       <div class="section-header fade-in">
-        <h2 data-i18n="section_how_title">Tres pasos simples</h2>
-        <p data-i18n="section_how_subtitle">Reserva servicios del hogar en minutos, no horas.</p>
+        <h2 data-i18n="section_trust_title">Miles confian en LaborOnline PR</h2>
+        <p data-i18n="section_trust_subtitle">Tu seguridad y satisfaccion son nuestra prioridad.</p>
       </div>
 
-      <div class="steps-grid">
-        <!-- Step 1 -->
-        <div class="step-card fade-in delay-100">
-          <div class="step-number">1</div>
-          <div class="step-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
-              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-              <path d="M12 11h4"></path>
-              <path d="M12 16h4"></path>
-              <path d="M8 11h.01"></path>
-              <path d="M8 16h.01"></path>
+      <div class="trust-grid">
+        <!-- Verified Professionals -->
+        <div class="trust-card fade-in delay-100">
+          <div class="trust-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="m9 12 2 2 4-4"></path>
             </svg>
           </div>
-          <h3 data-i18n="step1_title">Dinos que necesitas</h3>
-          <p data-i18n="step1_desc">Describe tu proyecto y recibe cotizaciones de profesionales verificados.</p>
+          <h4 data-i18n="trust_verified_title">Profesionales Verificados</h4>
+          <p data-i18n="trust_verified_desc">Verificacion de antecedentes y resenas reales</p>
         </div>
 
-        <!-- Step 2 -->
-        <div class="step-card fade-in delay-200">
-          <div class="step-number">2</div>
-          <div class="step-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+        <!-- Secure Payments -->
+        <div class="trust-card fade-in delay-200">
+          <div class="trust-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="5" rx="2"></rect>
+              <line x1="2" x2="22" y1="10" y2="10"></line>
             </svg>
           </div>
-          <h3 data-i18n="step2_title">Conecta al instante</h3>
-          <p data-i18n="step2_desc">Revisa perfiles, compara precios y elige el mejor profesional.</p>
+          <h4 data-i18n="trust_secure_title">Pagos Seguros</h4>
+          <p data-i18n="trust_secure_desc">Transacciones protegidas y encriptadas</p>
         </div>
 
-        <!-- Step 3 -->
-        <div class="step-card fade-in delay-300">
-          <div class="step-number">3</div>
-          <div class="step-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        <!-- Satisfaction Guarantee -->
+        <div class="trust-card fade-in delay-300">
+          <div class="trust-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
             </svg>
           </div>
-          <h3 data-i18n="step3_title">Relajate, esta resuelto</h3>
-          <p data-i18n="step3_desc">Tu profesional completa el trabajo. Paga de forma segura cuando estes satisfecho.</p>
+          <h4 data-i18n="trust_guarantee_title">Garantia de Satisfaccion</h4>
+          <p data-i18n="trust_guarantee_desc">Si no estas satisfecho, te devolvemos tu dinero</p>
+        </div>
+
+        <!-- 24/7 Support -->
+        <div class="trust-card fade-in delay-400">
+          <div class="trust-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <h4 data-i18n="trust_support_title">Soporte 24/7</h4>
+          <p data-i18n="trust_support_desc">Estamos aqui para ayudarte en cualquier momento</p>
+        </div>
+      </div>
+
+      <!-- Stats Bar -->
+      <div class="stats-bar fade-in">
+        <div class="stat-item">
+          <div class="stat-value">10,000+</div>
+          <div class="stat-label" data-i18n="stat_jobs">Trabajos Completados</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">500+</div>
+          <div class="stat-label" data-i18n="stat_providers">Proveedores Verificados</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">4.8</div>
+          <div class="stat-label" data-i18n="stat_rating">Calificacion Promedio</div>
         </div>
       </div>
     </div>
@@ -462,76 +489,59 @@
   </section>
 
   <!-- ========================================
-       TRUST SECTION
+       HOW IT WORKS SECTION
        ======================================== -->
-  <section id="trust" class="section trust-section">
+  <section id="how-it-works" class="section how-it-works">
     <div class="container">
       <div class="section-header fade-in">
-        <h2 data-i18n="section_trust_title">Miles confian en LaborOnline PR</h2>
-        <p data-i18n="section_trust_subtitle">Tu seguridad y satisfaccion son nuestra prioridad.</p>
+        <h2 data-i18n="section_how_title">Tres pasos simples</h2>
+        <p data-i18n="section_how_subtitle">Reserva servicios del hogar en minutos, no horas.</p>
       </div>
 
-      <div class="trust-grid">
-        <!-- Verified Professionals -->
-        <div class="trust-card fade-in delay-100">
-          <div class="trust-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              <path d="m9 12 2 2 4-4"></path>
+      <div class="steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card fade-in delay-100">
+          <div class="step-number">1</div>
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+              <path d="M12 11h4"></path>
+              <path d="M12 16h4"></path>
+              <path d="M8 11h.01"></path>
+              <path d="M8 16h.01"></path>
             </svg>
           </div>
-          <h4 data-i18n="trust_verified_title">Profesionales Verificados</h4>
-          <p data-i18n="trust_verified_desc">Verificacion de antecedentes y resenas reales</p>
+          <h3 data-i18n="step1_title">Dinos que necesitas</h3>
+          <p data-i18n="step1_desc">Describe tu proyecto y recibe cotizaciones de profesionales verificados.</p>
         </div>
 
-        <!-- Secure Payments -->
-        <div class="trust-card fade-in delay-200">
-          <div class="trust-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect width="20" height="14" x="2" y="5" rx="2"></rect>
-              <line x1="2" x2="22" y1="10" y2="10"></line>
+        <!-- Step 2 -->
+        <div class="step-card fade-in delay-200">
+          <div class="step-number">2</div>
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
           </div>
-          <h4 data-i18n="trust_secure_title">Pagos Seguros</h4>
-          <p data-i18n="trust_secure_desc">Transacciones protegidas y encriptadas</p>
+          <h3 data-i18n="step2_title">Conecta al instante</h3>
+          <p data-i18n="step2_desc">Revisa perfiles, compara precios y elige el mejor profesional.</p>
         </div>
 
-        <!-- Satisfaction Guarantee -->
-        <div class="trust-card fade-in delay-300">
-          <div class="trust-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+        <!-- Step 3 -->
+        <div class="step-card fade-in delay-300">
+          <div class="step-number">3</div>
+          <div class="step-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
             </svg>
           </div>
-          <h4 data-i18n="trust_guarantee_title">Garantia de Satisfaccion</h4>
-          <p data-i18n="trust_guarantee_desc">Si no estas satisfecho, te devolvemos tu dinero</p>
-        </div>
-
-        <!-- 24/7 Support -->
-        <div class="trust-card fade-in delay-400">
-          <div class="trust-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-            </svg>
-          </div>
-          <h4 data-i18n="trust_support_title">Soporte 24/7</h4>
-          <p data-i18n="trust_support_desc">Estamos aqui para ayudarte en cualquier momento</p>
-        </div>
-      </div>
-
-      <!-- Stats Bar -->
-      <div class="stats-bar fade-in">
-        <div class="stat-item">
-          <div class="stat-value">10,000+</div>
-          <div class="stat-label" data-i18n="stat_jobs">Trabajos Completados</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-value">500+</div>
-          <div class="stat-label" data-i18n="stat_providers">Proveedores Verificados</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-value">4.8</div>
-          <div class="stat-label" data-i18n="stat_rating">Calificacion Promedio</div>
+          <h3 data-i18n="step3_title">Relajate, esta resuelto</h3>
+          <p data-i18n="step3_desc">Tu profesional completa el trabajo. Paga de forma segura cuando estes satisfecho.</p>
         </div>
       </div>
     </div>
@@ -647,7 +657,7 @@
       </div>
 
       <div class="provider-image fade-in-right">
-        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&h=600&fit=crop&crop=face" alt="Profesional de servicios">
+        <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500&h=600&fit=crop" alt="Profesional de servicios">
       </div>
     </div>
   </section>

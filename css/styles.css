@@ -777,17 +777,21 @@ h4 { font-size: var(--font-size-xl); }
   width: 80px;
   height: 80px;
   margin: 0 auto var(--space-6);
-  background: var(--color-primary-light);
+  background: var(--gradient-primary);
   border-radius: var(--radius-2xl);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary-dark);
 }
 
 .step-icon svg {
   width: 40px;
   height: 40px;
+  stroke: url(#icon-gradient);
+}
+
+.step-icon svg * {
+  stroke: url(#icon-gradient);
 }
 
 .step-card h3 {
@@ -957,17 +961,21 @@ h4 { font-size: var(--font-size-xl); }
   width: 64px;
   height: 64px;
   margin: 0 auto var(--space-4);
-  background: var(--color-primary-light);
+  background: var(--gradient-primary);
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary-dark);
 }
 
 .trust-icon svg {
   width: 32px;
   height: 32px;
+  stroke: url(#icon-gradient);
+}
+
+.trust-icon svg * {
+  stroke: url(#icon-gradient);
 }
 
 .trust-card h4 {
@@ -1033,6 +1041,7 @@ h4 { font-size: var(--font-size-xl); }
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
+  align-items: stretch;
 }
 
 .testimonial-card {
@@ -1040,6 +1049,8 @@ h4 { font-size: var(--font-size-xl); }
   padding: var(--space-8);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonial-rating {
@@ -1060,12 +1071,14 @@ h4 { font-size: var(--font-size-xl); }
   color: var(--color-gray-700);
   margin-bottom: var(--space-6);
   line-height: 1.7;
+  flex: 1;
 }
 
 .testimonial-author {
   display: flex;
   align-items: center;
   gap: var(--space-4);
+  margin-top: auto;
 }
 
 .testimonial-avatar {
@@ -1098,7 +1111,9 @@ h4 { font-size: var(--font-size-xl); }
    ===================================================== */
 
 .provider-cta {
-  background: var(--gradient-accent);
+  background: linear-gradient(135deg, #FA9387 0%, #FACC87 30%, #4CA7E0 60%, #87CEFA 100%);
+  background-size: 200% 200%;
+  animation: heroGradient 15s ease infinite;
   position: relative;
   overflow: hidden;
 }
