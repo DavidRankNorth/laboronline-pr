@@ -31,7 +31,7 @@
   --gradient-hero: linear-gradient(135deg, #87CEFA 0%, #4CA7E0 40%, #FACC87 70%, #FA9387 100%);
   --gradient-accent: linear-gradient(135deg, #FACC87 0%, #FA9387 100%);
   --gradient-subtle: linear-gradient(180deg, #F9FAFB 0%, #FFFFFF 100%);
-  --gradient-icon: linear-gradient(135deg, #FACC87 0%, #FA9387 100%);
+  --gradient-icon: linear-gradient(135deg, #4CA7E0 0%, #FA9387 100%);
 
   /* Typography */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
