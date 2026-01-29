@@ -890,11 +890,16 @@ h4 { font-size: var(--font-size-xl); }
   justify-content: center;
   box-shadow: var(--shadow-lg);
   z-index: 10;
+  transition: transform var(--transition-base);
+}
+
+.service-card:hover .service-card-icon {
+  transform: scale(1.15);
 }
 
 .service-card-icon svg {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   stroke: var(--color-white);
 }
 
@@ -939,15 +944,15 @@ h4 { font-size: var(--font-size-xl); }
   line-height: 1.3;
 }
 
-.service-card-link span {
-  display: flex;
-  flex-direction: column;
+.service-card-link .line-two {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
 }
 
 .service-card-link svg {
-  width: 16px;
-  height: 16px;
-  margin-top: var(--space-1);
+  width: 14px;
+  height: 14px;
 }
 
 @media (max-width: 1024px) {
