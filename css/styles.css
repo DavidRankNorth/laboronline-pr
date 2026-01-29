@@ -320,7 +320,14 @@ h4 { font-size: var(--font-size-xl); }
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-white);
+}
+
+.logo-icon svg {
+  stroke: url(#icon-gradient);
+}
+
+.logo-icon svg * {
+  stroke: url(#icon-gradient);
 }
 
 .logo-text {
@@ -774,19 +781,19 @@ h4 { font-size: var(--font-size-xl); }
 }
 
 .step-icon {
-  width: 80px;
-  height: 80px;
+  width: 64px;
+  height: 64px;
   margin: 0 auto var(--space-6);
   background: var(--gradient-primary);
-  border-radius: var(--radius-2xl);
+  border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .step-icon svg {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   stroke: url(#icon-gradient);
 }
 
@@ -873,7 +880,6 @@ h4 { font-size: var(--font-size-xl); }
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-white);
   box-shadow: var(--shadow-lg);
   z-index: 10;
   transition: transform var(--transition-base), box-shadow var(--transition-base);
@@ -887,6 +893,11 @@ h4 { font-size: var(--font-size-xl); }
 .service-card-icon svg {
   width: 32px;
   height: 32px;
+  stroke: url(#icon-gradient);
+}
+
+.service-card-icon svg * {
+  stroke: url(#icon-gradient);
 }
 
 .service-card-content {
@@ -962,7 +973,7 @@ h4 { font-size: var(--font-size-xl); }
   height: 64px;
   margin: 0 auto var(--space-4);
   background: var(--gradient-primary);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
   justify-content: center;
