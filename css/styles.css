@@ -31,6 +31,7 @@
   --gradient-hero: linear-gradient(135deg, #87CEFA 0%, #4CA7E0 40%, #FACC87 70%, #FA9387 100%);
   --gradient-accent: linear-gradient(135deg, #FACC87 0%, #FA9387 100%);
   --gradient-subtle: linear-gradient(180deg, #F9FAFB 0%, #FFFFFF 100%);
+  --gradient-icon: linear-gradient(135deg, #FACC87 0%, #FA9387 30%, #4CA7E0 70%, #87CEFA 100%);
 
   /* Typography */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -315,7 +316,7 @@ h4 { font-size: var(--font-size-xl); }
 .logo-icon {
   width: 40px;
   height: 40px;
-  background: var(--gradient-primary);
+  background: var(--gradient-icon);
   border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
@@ -323,11 +324,11 @@ h4 { font-size: var(--font-size-xl); }
 }
 
 .logo-icon svg {
-  stroke: url(#icon-gradient);
+  stroke: var(--color-white);
 }
 
 .logo-icon svg * {
-  stroke: url(#icon-gradient);
+  stroke: var(--color-white);
 }
 
 .logo-text {
@@ -784,7 +785,7 @@ h4 { font-size: var(--font-size-xl); }
   width: 64px;
   height: 64px;
   margin: 0 auto var(--space-6);
-  background: var(--gradient-primary);
+  background: var(--gradient-icon);
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
@@ -794,11 +795,11 @@ h4 { font-size: var(--font-size-xl); }
 .step-icon svg {
   width: 32px;
   height: 32px;
-  stroke: url(#icon-gradient);
+  stroke: var(--color-white);
 }
 
 .step-icon svg * {
-  stroke: url(#icon-gradient);
+  stroke: var(--color-white);
 }
 
 .step-card h3 {
@@ -875,7 +876,7 @@ h4 { font-size: var(--font-size-xl); }
   transform: translate(-50%, -50%);
   width: 64px;
   height: 64px;
-  background: var(--gradient-primary);
+  background: var(--gradient-icon);
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
@@ -893,11 +894,11 @@ h4 { font-size: var(--font-size-xl); }
 .service-card-icon svg {
   width: 32px;
   height: 32px;
-  stroke: url(#icon-gradient);
+  stroke: var(--color-white);
 }
 
 .service-card-icon svg * {
-  stroke: url(#icon-gradient);
+  stroke: var(--color-white);
 }
 
 .service-card-content {
@@ -972,7 +973,7 @@ h4 { font-size: var(--font-size-xl); }
   width: 64px;
   height: 64px;
   margin: 0 auto var(--space-4);
-  background: var(--gradient-primary);
+  background: var(--gradient-icon);
   border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
@@ -982,11 +983,11 @@ h4 { font-size: var(--font-size-xl); }
 .trust-icon svg {
   width: 32px;
   height: 32px;
-  stroke: url(#icon-gradient);
+  stroke: var(--color-white);
 }
 
 .trust-icon svg * {
-  stroke: url(#icon-gradient);
+  stroke: var(--color-white);
 }
 
 .trust-card h4 {
