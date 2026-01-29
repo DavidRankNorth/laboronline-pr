@@ -316,19 +316,17 @@ h4 { font-size: var(--font-size-xl); }
 .logo-icon {
   width: 40px;
   height: 40px;
-  background: var(--gradient-icon);
-  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .logo-icon svg {
-  stroke: var(--color-white);
+  stroke: url(#logo-gradient);
 }
 
 .logo-icon svg * {
-  stroke: var(--color-white);
+  stroke: url(#logo-gradient);
 }
 
 .logo-text {
