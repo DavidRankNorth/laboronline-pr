@@ -879,13 +879,13 @@ h4 { font-size: var(--font-size-xl); }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, var(--color-white) 0%, var(--color-white) 25%, transparent 50%);
+  background: linear-gradient(to top, var(--color-white) 0%, var(--color-white) 35%, transparent 60%);
   pointer-events: none;
 }
 
 .service-card-icon {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 64px;
@@ -897,12 +897,6 @@ h4 { font-size: var(--font-size-xl); }
   justify-content: center;
   box-shadow: var(--shadow-lg);
   z-index: 10;
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
-}
-
-.service-card:hover .service-card-icon {
-  transform: translate(-50%, -50%) rotate(5deg);
-  box-shadow: var(--shadow-xl);
 }
 
 .service-card-icon svg {
@@ -920,7 +914,7 @@ h4 { font-size: var(--font-size-xl); }
   bottom: 0;
   left: 0;
   right: 0;
-  padding: var(--space-5);
+  padding: var(--space-4);
   text-align: center;
   z-index: 5;
 }
