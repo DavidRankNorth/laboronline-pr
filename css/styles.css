@@ -308,7 +308,7 @@ h4 { font-size: var(--font-size-xl); }
 .logo {
   display: flex;
   align-items: center;
-  gap: var(--space-1);
+  gap: 0;
   font-size: var(--font-size-3xl);
   font-weight: 700;
 }
@@ -341,6 +341,7 @@ h4 { font-size: var(--font-size-xl); }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-weight: 800;
 }
 
 .nav-menu {
