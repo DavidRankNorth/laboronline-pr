@@ -606,11 +606,13 @@ h4 { font-size: var(--font-size-xl); }
   padding: var(--space-2);
   box-shadow: var(--shadow-xl);
   display: flex;
+  align-items: center;
   gap: var(--space-2);
 }
 
 .search-field {
   flex: 1;
+  min-width: 0;
   display: flex;
   align-items: center;
   gap: var(--space-3);
@@ -631,6 +633,7 @@ h4 { font-size: var(--font-size-xl); }
 .search-field input,
 .search-field select {
   flex: 1;
+  min-width: 0;
   border: none;
   background: transparent;
   font-size: var(--font-size-base);
@@ -651,10 +654,13 @@ h4 { font-size: var(--font-size-xl); }
   width: 1px;
   background: var(--color-gray-200);
   margin: var(--space-2) 0;
+  flex-shrink: 0;
 }
 
 .search-box .btn {
-  padding: var(--space-4) var(--space-8);
+  padding: var(--space-4) var(--space-6);
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -811,13 +817,13 @@ h4 { font-size: var(--font-size-xl); }
 }
 
 .service-card {
-  border-radius: var(--radius-xl);
+  position: relative;
+  border-radius: var(--radius-2xl);
   overflow: hidden;
   box-shadow: var(--shadow-md);
   transition: all var(--transition-base);
   cursor: pointer;
-  position: relative;
-  background: transparent;
+  aspect-ratio: 1 / 1;
 }
 
 .service-card:hover {
@@ -826,12 +832,12 @@ h4 { font-size: var(--font-size-xl); }
 }
 
 .service-card:hover .service-card-image img {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .service-card-image {
-  position: relative;
-  height: 180px;
+  position: absolute;
+  inset: 0;
   overflow: hidden;
 }
 
@@ -842,69 +848,67 @@ h4 { font-size: var(--font-size-xl); }
   transition: transform var(--transition-slow);
 }
 
+/* Gradient overlay - white at bottom, transparent at 50% */
+.service-card-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--color-white) 0%, var(--color-white) 25%, transparent 50%);
+  pointer-events: none;
+}
+
 .service-card-icon {
   position: absolute;
-  top: -28px;
-  right: 20px;
-  width: 56px;
-  height: 56px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
   background: var(--gradient-primary);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-xl);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-white);
   box-shadow: var(--shadow-lg);
   z-index: 10;
-  border: 3px solid var(--color-white);
   transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
 .service-card:hover .service-card-icon {
-  transform: scale(1.1) rotate(5deg);
+  transform: translate(-50%, -50%) scale(1.1);
   box-shadow: var(--shadow-xl);
 }
 
 .service-card-icon svg {
-  width: 26px;
-  height: 26px;
+  width: 32px;
+  height: 32px;
 }
 
 .service-card-content {
-  padding: var(--space-6);
-  padding-top: var(--space-10);
-  background: linear-gradient(to bottom, transparent 0%, var(--color-white) 30px, var(--color-white) 100%);
-  position: relative;
-  margin-top: -30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-5);
+  text-align: center;
+  z-index: 5;
 }
 
 .service-card h4 {
-  margin-bottom: var(--space-2);
+  margin-bottom: var(--space-1);
+  color: var(--color-gray-900);
+  font-size: var(--font-size-lg);
 }
 
 .service-card p {
-  color: var(--color-gray-500);
+  color: var(--color-gray-600);
   font-size: var(--font-size-sm);
-  margin-bottom: var(--space-4);
+  margin: 0;
 }
 
 .service-card-link {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  font-weight: 600;
-  color: var(--color-primary-dark);
-  font-size: var(--font-size-sm);
-  transition: gap var(--transition-fast);
-}
-
-.service-card:hover .service-card-link {
-  gap: var(--space-3);
-}
-
-.service-card-link svg {
-  width: 16px;
-  height: 16px;
+  display: none;
 }
 
 @media (max-width: 1024px) {
@@ -915,7 +919,8 @@ h4 { font-size: var(--font-size-xl); }
 
 @media (max-width: 640px) {
   .services-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
   }
 }
 
