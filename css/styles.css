@@ -28,7 +28,7 @@
 
   /* Gradients */
   --gradient-primary: linear-gradient(135deg, #87CEFA 0%, #4CA7E0 100%);
-  --gradient-hero: linear-gradient(180deg, #87CEFA 0%, #4CA7E0 60%, #FFFFFF 100%);
+  --gradient-hero: linear-gradient(135deg, #87CEFA 0%, #4CA7E0 40%, #FACC87 70%, #FA9387 100%);
   --gradient-accent: linear-gradient(135deg, #FACC87 0%, #FA9387 100%);
   --gradient-subtle: linear-gradient(180deg, #F9FAFB 0%, #FFFFFF 100%);
 
@@ -479,8 +479,16 @@ h4 { font-size: var(--font-size-xl); }
   display: flex;
   align-items: center;
   background: var(--gradient-hero);
+  background-size: 200% 200%;
+  animation: heroGradient 15s ease infinite;
   padding-top: 72px;
   overflow: hidden;
+}
+
+@keyframes heroGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .hero::before {
@@ -803,13 +811,13 @@ h4 { font-size: var(--font-size-xl); }
 }
 
 .service-card {
-  background: var(--color-white);
   border-radius: var(--radius-xl);
-  overflow: visible;
+  overflow: hidden;
   box-shadow: var(--shadow-md);
   transition: all var(--transition-base);
   cursor: pointer;
   position: relative;
+  background: transparent;
 }
 
 .service-card:hover {
@@ -823,9 +831,8 @@ h4 { font-size: var(--font-size-xl); }
 
 .service-card-image {
   position: relative;
-  height: 160px;
+  height: 180px;
   overflow: hidden;
-  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
 }
 
 .service-card-image img {
@@ -837,7 +844,7 @@ h4 { font-size: var(--font-size-xl); }
 
 .service-card-icon {
   position: absolute;
-  bottom: -24px;
+  top: -28px;
   right: 20px;
   width: 56px;
   height: 56px;
@@ -865,12 +872,10 @@ h4 { font-size: var(--font-size-xl); }
 
 .service-card-content {
   padding: var(--space-6);
-  padding-top: var(--space-6);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, var(--color-white) 20%);
-  position: relative;
-  margin-top: -20px;
   padding-top: var(--space-10);
-  border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  background: linear-gradient(to bottom, transparent 0%, var(--color-white) 30px, var(--color-white) 100%);
+  position: relative;
+  margin-top: -30px;
 }
 
 .service-card h4 {
