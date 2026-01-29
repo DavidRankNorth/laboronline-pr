@@ -314,15 +314,18 @@ h4 { font-size: var(--font-size-xl); }
 }
 
 .logo-icon {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .logo-icon svg {
+  width: 36px;
+  height: 36px;
   stroke: url(#logo-gradient);
+  stroke-width: 2.5;
 }
 
 .logo-icon svg * {
@@ -334,7 +337,10 @@ h4 { font-size: var(--font-size-xl); }
 }
 
 .logo-text span {
-  color: var(--color-primary-dark);
+  background: linear-gradient(135deg, #87CEFA 0%, #FACC87 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .nav-menu {
