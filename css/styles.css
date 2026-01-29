@@ -896,7 +896,7 @@ h4 { font-size: var(--font-size-xl); }
 }
 
 .service-card:hover .service-card-icon {
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translate(-50%, -50%) rotate(5deg);
   box-shadow: var(--shadow-xl);
 }
 
